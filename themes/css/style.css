@@ -320,7 +320,7 @@ body{
 	border-bottom: 1px solid #e6e6e6;
 }
 .container-5 .col-md-2{
-	padding: 0px 15px 0px 0px;
+	padding: 0px 15px 0px 10px;
 }
 .adv img{
 	width: 100%;
@@ -396,7 +396,7 @@ body{
 	border-radius: 5px;
 }
 
-.footer-2 .col-sm-6{
+.post .col-sm-6{
 	padding: 0px;
 }
 .recent .col-md-4{
