@@ -28,6 +28,7 @@ body{
 .header-right{
 	float: right;
 	margin-right: 100px;
+	overflow: hidden;
 }
 .header-right ul li{
 	float: left;
@@ -107,28 +108,34 @@ body{
 /*---------------end header-----------*/
 
 .container-1{
-	position: relative;
 	padding-top: 30px;
-	height: 420px;
 	border-bottom: 1px solid #e6e6e6;
-	overflow: hidden;
+	
 }
 .container-1 .container{
 	padding-top: 40px;
 	border-top: 1px dashed #dedede;
+
+}
+.container-1 .col-md-3{
+	overflow: hidden;
+	height: 380px;
 }
 .container-1 img{
 	position: absolute;
-	z-index: -1;
+	width: 90%;
+	z-index: 1;
 }
 .box-container-1{
+	position: absolute;
 	text-align: center;
 	padding: 90px 10px 0px 10px;
+	z-index: 2;
 }
 .box-container-1 p{
 	font-size: 16px;
 	font-weight: bold;
-	margin-bottom: 30px; 
+	margin-bottom: 30px;
 }
 .read{
 	background: url(../images/read.png) no-repeat;
@@ -183,6 +190,7 @@ body{
 .sl p{
 	font-weight: bold;
 	font-size: 14px;
+	color: #111111;
 }
 .images .col-md-3{
 	padding-right: 0px; 
@@ -215,6 +223,12 @@ body{
 }
 .info .col-md-10{
 	padding: 0px 70px 0px 50px;
+}
+.info .col-sm-10{
+	padding: 0px 0px 0px 70px;
+}
+.info .col-xs-10{
+	padding: 0px 0px 0px 70px;
 }
 .info .col-md-10 p{
 	color: #a9a9aa;
@@ -267,12 +281,19 @@ body{
 .container-4 .container .col-md-4{
 	padding-right: 5px;	
 }
+.container-4 img{
+	width: 100%;
+}
+.tag img{
+	width: auto;
+}
 .info-2{
 	padding-top: 5px;
 }
 .info-2 span{
 	font-size: 14px;
 	font-weight: bold;
+	color: #1e1e20;
 }
 .info-2 a{
 	padding-left: 5px;
@@ -336,13 +357,14 @@ body{
 	margin-top: 30px;
 }
 .footer-1 input{
-	background: url(../images/but-search.png) right no-repeat;
+	background: transparent;
 	height: 40px;
 	width: 280px;
 	border: 2px solid #fff;
 	border-radius: 5px;
 	margin-top: 10px;
 	padding-left: 10px; 
+	position: absolute;
 }
 .search{
 	padding-top: 5px;
@@ -368,9 +390,21 @@ body{
 .recent b{
 	color: #41c0fb;
 }
+.footer-1 .col-md-4 img{
+	position: absolute;
+	margin: 10px 0px 0px 240px;
+	border-radius: 5px;
+}
 
 .footer-2 .col-md-6{
 	padding: 0px;
+}
+.rg ul{
+	padding: 0px;
+}
+.rg ul li{
+	float: left;
+	list-style: none;
 }
 .first{
 	padding-right: 15px!important;
